@@ -1,0 +1,48 @@
+/* ── Grid card ── */
+.repo-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 130px;
+  transition: border-color 0.15s;
+}
+.repo-card:hover { border-color: var(--text-muted); }
+.repo-card-footer { margin-top: auto; padding-top: 8px; }
+
+/* ── List item ── */
+.repo-list-item { padding: 24px 0; border-top: 1px solid var(--border); }
+.repo-desc-list { font-size: 14px; color: var(--text-secondary); margin: 8px 0; }
+
+/* ── Shared ── */
+.repo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.repo-row svg { color: var(--text-muted); flex-shrink: 0; }
+
+.repo-link { font-size: 14px; font-weight: 600; color: var(--link); }
+.repo-link:hover { text-decoration: underline; }
+
+.repo-badge {
+  font-size: 11px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1px 7px;
+}
+.repo-forked { font-size: 12px; color: var(--text-secondary); }
+.repo-forked a { color: var(--link); }
+
+.repo-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; flex: 1; }
+
+.repo-meta { display: flex; align-items: center; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
+.repo-lang { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text-secondary); }
+.lang-dot  { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.repo-stat { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text-secondary); }

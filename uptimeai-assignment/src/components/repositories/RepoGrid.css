@@ -1,0 +1,14 @@
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.repo-skeleton {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+@media (max-width: 680px) {
+  .repo-grid { grid-template-columns: 1fr; }
+}
