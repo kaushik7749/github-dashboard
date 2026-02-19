@@ -28,7 +28,7 @@ export default function Header({ user }) {
 
         {/* Nav links */}
         <nav className="header-nav">
-          <a href="#">Pull requests</a>
+          <a href="#">Pull request</a>
           <a href="#">Issues</a>
           <a href="#">Marketplace</a>
           <a href="#">Explore</a>
